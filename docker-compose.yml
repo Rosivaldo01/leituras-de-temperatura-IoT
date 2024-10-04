@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  dataview:
+      build:
+        context: '.'
+        dockerfile: Dockerfile    
+      volumes:
+        - '.:/app'
+      ports:
+        - '8501:8501'
+
+    
+
