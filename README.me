@@ -1,9 +1,24 @@
-Rodar o primeiro comando:
-docker build -t atividade-temperatura .
+# Aplicação de Processamento de Dados de Temperatura
 
-Rodar o segundo comando:
-docker run atividade-temperatura python main.py
+Esta aplicação conecta-se ao Supabase para baixar um arquivo CSV de um bucket, 
+processa os dados e inseri em uma tabela no banco de dados Supabase.
 
-Rodar o terceiro comando para rodar o GRAFICO:
-docker run -p 8501:8501 atividade-temperatura streamlit run dataview.py --server.port=8501 --server.address=0.0.0.0
+## Tecnologias Utilizadas
 
+**Python**: Linguagem de programação utilizada.
+- **Supabase**: Backend como serviço para armazenamento de dados.
+- **Pandas**: Biblioteca para manipulação e análise de dados.
+- **JSON**: Para manipulação de dados em formato JSON.
+
+# Análise de Temperaturas
+
+Esta aplicação utiliza Streamlit para visualizar dados de temperatura armazenados em um banco de dados Supabase. 
+O aplicativo conecta-se ao Supabase, carrega dados e gera visualizações interativas.
+
+## Tecnologias Utilizadas
+
+- **Python**: Linguagem de programação utilizada.
+- **Streamlit**: Framework para criar aplicações web interativas.
+- **Supabase**: Backend como serviço para armazenamento de dados.
+- **Pandas**: Biblioteca para manipulação e análise de dados.
+- **Plotly**: Biblioteca para visualização de dados.
