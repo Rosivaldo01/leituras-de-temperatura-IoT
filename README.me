@@ -2,5 +2,8 @@ Rodar o primeiro comando:
 docker build -t atividade-temperatura .
 
 Rodar o segundo comando:
-docker run -p 8501:8501 atividade-temperatura
+docker run atividade-temperatura python main.py
+
+Rodar o terceiro comando para rodar o GRAFICO:
+docker run -p 8501:8501 atividade-temperatura streamlit run dataview.py --server.port=8501 --server.address=0.0.0.0
 
